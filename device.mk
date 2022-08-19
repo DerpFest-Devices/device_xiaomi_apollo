@@ -33,5 +33,9 @@ TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 # Inherit from xiaomi sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
+# Shims
+PRODUCT_PACKAGES += \
+    lib-watermarkshim
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
